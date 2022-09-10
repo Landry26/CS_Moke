@@ -1,6 +1,36 @@
-body {
-    background-image: url(images/batiment_moke.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+body{
+    box-sizing: border-box;
     background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-header{
+    background-color: #808080;
+    width: auto;
+    height: 25%;
+}
+
+.main-header .nav-link{
+    margin: 0px;
+    padding: 5px 0px 5px 5px;
+    display: inline;
+}
+
+.main-header a{
+    color: #fff;
+    text-align: right;
+    font: 25px bold;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #808080;
+    width: 100%;
+    height: 100%;
+}
+
+footer .contact p{
+   text-align: center;
+   color: #fff;
+   font: 15px;
 }
