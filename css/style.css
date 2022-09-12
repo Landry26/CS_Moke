@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     box-sizing: border-box;
     background-color: #fff;
@@ -5,23 +9,44 @@ body{
 }
 
 .main-header{
+    overflow: hidden;
     background-color: #808080;
     width: auto;
     height: 25%;
+    padding: 2px 2px;
+    padding-top: 0px;
+    font-size: 15px small;
 }
 
 .main-header .nav-link{
     margin: 0px;
-    padding: 5px 0px 5px 5px;
     display: inline;
+    padding: 12px;
+    text-align: right; 
+    float: right;
+    padding-top: 0px;
 }
 
 .main-header a{
     color: #fff;
-    text-align: right;
-    font: 25px bold;
+    font: 18px bold;
     text-decoration: none;
+    text-align: right; 
+    float: right;
+    padding-top: 0px;
 }
+
+.main-header a:hover{
+    background-color: #1e90ff;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-header a {
+      float: right;
+      display: flex;
+      text-align: right;
+    }
+  }
 
 footer{
     background-color: #808080;
@@ -76,4 +101,25 @@ footer .contact p{
    text-align: center;
    color: #fff;
    font: 15px;
+}
+
+.othernews span a{
+    text-decoration: none;
+    color: #fff;
+    font: bold;
+    margin-left: 25px;
+
+}
+
+footer .social-network{
+    text-decoration: none;
+    text-align: right;
+    margin-right: 45px;
+}
+
+footer .social-network a{
+    font: bold;
+    text-decoration: none;
+    text-align: right;
+    margin-right: 25px;
 }
