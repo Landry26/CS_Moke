@@ -29,6 +29,49 @@ footer{
     height: 100%;
 }
 
+
+footer  form{
+    text-align: center;
+    display: block;
+}
+
+footer form input{
+    margin-bottom: 10px;
+    width: 35%;
+    height: 250%;
+    border-radius: 5px;
+    cursor: text;
+    text-transform: none;
+    text-indent: 0px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    writing-mode: horizontal-tb !important;
+}
+
+footer form textarea{
+    margin-bottom: 10px;
+    width: 35%;
+    height: 250%;
+    border-radius: 5px;
+    cursor: text;
+    text-transform: none;
+    text-indent: 0px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    writing-mode: horizontal-tb !important;
+}
+
+footer form button{
+    width: 25%;
+    height: 75%;
+    background-color: #0000ff;
+    color: #fff;
+    font: 25px bold;
+    border-radius: 2.5px;
+    position: inherit;
+    border: none;
+}
+
 footer .contact p{
    text-align: center;
    color: #fff;
