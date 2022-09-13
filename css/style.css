@@ -1,16 +1,21 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    outline: none;
 }
 
 body{
+    font-weight: 400;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: #656464;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 22px;
 }
 
 .main-header{
     overflow: hidden;
-    background-color: #808080;
+    background-color: #fff;
     width: auto;
     height: 25%;
     padding: 2px 2px;
@@ -28,28 +33,52 @@ body{
 }
 
 .main-header a{
-    color: #fff;
-    font: 18px bold;
+    color: #1e90ff;
+    font: 20px bold;
     text-decoration: none;
     text-align: right; 
     float: right;
     padding-top: 0px;
 }
 
-.main-header a:hover{
-    background-color: #1e90ff;
+.main-header a:hover, .main-header .nav-link:hover{
+    background-color: #000;
+    opacity: 0.5;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 749px) {
     .main-header a {
       float: right;
       display: flex;
       text-align: right;
     }
   }
+.row .presentation{
+    height: 100%;
+    width: 100%;
+}
+.small-presentation{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+}
+.presentation{
+    width: 50%;
+    height: 50px;
+    padding-block: 10px;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+    margin-bottom: 150px;
+    color: white;
+}
+
+.organisation .organized-option{
+    display: none; 
+}
 
 footer{
-    background-color: #808080;
+    background-color: #000;
     width: 100%;
     height: 100%;
 }
