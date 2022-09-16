@@ -8,7 +8,7 @@
 body{
     font-weight: 400;
     box-sizing: border-box;
-    background-color: #656464;
+    background-color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 22px;
 }
@@ -43,7 +43,8 @@ body{
 
 .main-header a:hover, .main-header .nav-link:hover{
     background-color: #000;
-    opacity: 0.5;
+    color: #fff;
+    opacity: 0.9;
 }
 
 @media screen and (max-width: 749px) {
@@ -53,36 +54,60 @@ body{
       text-align: right;
     }
   }
-.row .presentation{
-    height: 100%;
-    width: 100%;
-}
+
 .small-presentation{
-    width: 100%;
+    width: 75%;
     height: 450px;
-    display: flex;
     flex-direction: row;
 }
-.presentation{
-    width: 50%;
-    height: 50px;
+
+.small-presentation .objectives{
+    width: 60%;
+    height: 467px;
     padding-block: 10px;
     background: rgba(0,0,0,0.5);
-    z-index: 2;
-    margin-bottom: 150px;
+    z-index: 1;
+    margin-top: 0;
+    font: 20px bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
 
-.organisation .organized-option{
-    display: none; 
+.presentation .organized-section{
+    position: relative;
+    overflow: hidden;
+
 }
 
-footer{
+.organized-section .slideclasse{
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 300%;
+  animation: alternate;
+  transition: all 0.4s;
+}
+
+@keyframes organized-section{
+    0%{left: 0%;}
+    100%{left: -200%;}
+}
+
+.row{
+    width: 50%;
+    height: 125px;
+}
+
+.main-footer{
+    overflow: hidden;
     background-color: #000;
     width: 100%;
-    height: 100%;
+    height: 10%;
+    opacity: 0.7;
+    padding: 0;
+    margin: 0;
 }
-
 
 footer  form{
     text-align: center;
@@ -115,15 +140,28 @@ footer form textarea{
     writing-mode: horizontal-tb !important;
 }
 
-footer form button{
+footer form .btn{
     width: 25%;
     height: 75%;
-    background-color: #0000ff;
     color: #fff;
     font: 25px bold;
     border-radius: 2.5px;
     position: inherit;
     border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer img{
+    border-radius: 20px;
+    box-shadow: inset;
+    height: 0.7cm;
+    width: 0.7cm;
+    text-align: right;
+}
+
+footer .socials a{
+    text-align: end;
+    margin-top: 5px;
 }
 
 footer .contact p{
@@ -137,18 +175,12 @@ footer .contact p{
     color: #fff;
     font: bold;
     margin-left: 25px;
-
 }
 
-footer .social-network{
-    text-decoration: none;
-    text-align: right;
-    margin-right: 45px;
-}
-
-footer .social-network a{
-    font: bold;
-    text-decoration: none;
-    text-align: right;
-    margin-right: 25px;
-}
+ @media screen and (max-width:749px){
+    footer{
+        float: right;
+        display: flex;
+        text-align: right;
+    }
+ }
